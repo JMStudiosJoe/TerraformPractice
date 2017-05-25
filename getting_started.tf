@@ -1,12 +1,9 @@
 provider "aws" {
-  access_key = "ACCESS_KEY_HERE"
-  secret_key = "SECRET_KEY_HERE"
-  region     = "us-east-1"
+  region     = "us-west-2"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-2757f631"
+resource "aws_instance" "JoesterEC2" {
+  ami           = "ami-d732f0b7"
   instance_type = "t2.micro"
 }
 
-https://console.aws.amazon.com/iam/home#/users
