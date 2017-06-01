@@ -3,6 +3,6 @@ variable "first_var" {
   default = "my first variable"
 }
 
-variable "gethubProject" {
+variable "githubProject" {
   default = "get::https://github.com/JMStudiosJoe/ReactPractice/tree/JMStudiosReact"
 }
