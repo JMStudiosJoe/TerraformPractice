@@ -2,3 +2,5 @@
 *.tfstate.backup
 venv/
 .*.swp
+*.pyc
+redis/log/

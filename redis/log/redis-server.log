@@ -1,0 +1,466 @@
+19726:C 05 Jun 15:16:47.078 # Can't chdir to '/var/lib/redis': No such file or directory
+19752:C 05 Jun 15:16:54.805 # Can't chdir to '/var/lib/redis': No such file or directory
+19790:C 05 Jun 15:17:15.095 # Can't chdir to '/var/lib/redis': No such file or directory
+20491:C 05 Jun 15:21:33.672 # Can't chdir to '/var/lib/redis': No such file or directory
+20767:M 05 Jun 15:22:34.123 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.9 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 20767
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+20767:M 05 Jun 15:22:34.125 # Server started, Redis version 3.2.9
+20767:M 05 Jun 15:22:34.125 * The server is now ready to accept connections on port 6379
+23147:M 05 Jun 15:25:40.751 * Increased maximum number of open files to 10032 (it was originally set to 256).
+23147:M 05 Jun 15:25:40.752 # Creating Server TCP listening socket *:6379: bind: Address already in use
+23212:M 05 Jun 15:26:14.678 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.9 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6300
+ |    `-._   `._    /     _.-'    |     PID: 23212
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+23212:M 05 Jun 15:26:14.680 # Server started, Redis version 3.2.9
+23212:M 05 Jun 15:26:14.680 * The server is now ready to accept connections on port 6300
+23212:M 05 Jun 15:31:15.006 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:15.007 * Background saving started by pid 24210
+24210:C 05 Jun 15:31:15.007 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:15.109 # Background saving error
+23212:M 05 Jun 15:31:21.070 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:21.070 * Background saving started by pid 24216
+24216:C 05 Jun 15:31:21.071 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:21.173 # Background saving error
+23212:M 05 Jun 15:31:27.033 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:27.034 * Background saving started by pid 24220
+24220:C 05 Jun 15:31:27.034 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:27.137 # Background saving error
+23212:M 05 Jun 15:31:33.001 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:33.001 * Background saving started by pid 24226
+24226:C 05 Jun 15:31:33.002 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:33.104 # Background saving error
+23212:M 05 Jun 15:31:39.067 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:39.069 * Background saving started by pid 24233
+24233:C 05 Jun 15:31:39.069 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:39.170 # Background saving error
+23212:M 05 Jun 15:31:45.030 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:45.031 * Background saving started by pid 24239
+24239:C 05 Jun 15:31:45.031 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:45.133 # Background saving error
+23212:M 05 Jun 15:31:51.097 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:51.097 * Background saving started by pid 24245
+24245:C 05 Jun 15:31:51.098 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:51.200 # Background saving error
+23212:M 05 Jun 15:31:57.058 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:31:57.059 * Background saving started by pid 24249
+24249:C 05 Jun 15:31:57.059 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:31:57.162 # Background saving error
+23212:M 05 Jun 15:32:03.024 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:03.025 * Background saving started by pid 24255
+24255:C 05 Jun 15:32:03.025 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:03.128 # Background saving error
+23212:M 05 Jun 15:32:09.089 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:09.090 * Background saving started by pid 24262
+24262:C 05 Jun 15:32:09.091 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:09.192 # Background saving error
+23212:M 05 Jun 15:32:15.051 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:15.052 * Background saving started by pid 24268
+24268:C 05 Jun 15:32:15.052 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:15.153 # Background saving error
+23212:M 05 Jun 15:32:21.006 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:21.007 * Background saving started by pid 24274
+24274:C 05 Jun 15:32:21.007 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:21.109 # Background saving error
+23212:M 05 Jun 15:32:27.057 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:27.058 * Background saving started by pid 24279
+24279:C 05 Jun 15:32:27.058 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:27.161 # Background saving error
+23212:M 05 Jun 15:32:33.027 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:33.028 * Background saving started by pid 24286
+24286:C 05 Jun 15:32:33.028 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:33.130 # Background saving error
+23212:M 05 Jun 15:32:39.092 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:39.094 * Background saving started by pid 24291
+24291:C 05 Jun 15:32:39.095 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:39.196 # Background saving error
+23212:M 05 Jun 15:32:45.053 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:45.053 * Background saving started by pid 24300
+24300:C 05 Jun 15:32:45.054 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:45.156 # Background saving error
+23212:M 05 Jun 15:32:51.022 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:51.022 * Background saving started by pid 24306
+24306:C 05 Jun 15:32:51.023 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:51.124 # Background saving error
+23212:M 05 Jun 15:32:57.089 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:32:57.089 * Background saving started by pid 24310
+24310:C 05 Jun 15:32:57.089 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:32:57.192 # Background saving error
+23212:M 05 Jun 15:33:03.044 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:03.045 * Background saving started by pid 24316
+24316:C 05 Jun 15:33:03.045 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:03.147 # Background saving error
+23212:M 05 Jun 15:33:09.008 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:09.010 * Background saving started by pid 24320
+24320:C 05 Jun 15:33:09.010 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:09.112 # Background saving error
+23212:M 05 Jun 15:33:15.068 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:15.069 * Background saving started by pid 24329
+24329:C 05 Jun 15:33:15.069 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:15.172 # Background saving error
+23212:M 05 Jun 15:33:21.029 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:21.030 * Background saving started by pid 24335
+24335:C 05 Jun 15:33:21.030 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:21.132 # Background saving error
+23212:M 05 Jun 15:33:27.097 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:27.098 * Background saving started by pid 24339
+24339:C 05 Jun 15:33:27.098 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:27.201 # Background saving error
+23212:M 05 Jun 15:33:33.060 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:33.061 * Background saving started by pid 24345
+24345:C 05 Jun 15:33:33.061 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:33.164 # Background saving error
+23212:M 05 Jun 15:33:39.026 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:39.028 * Background saving started by pid 24349
+24349:C 05 Jun 15:33:39.029 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:39.130 # Background saving error
+23212:M 05 Jun 15:33:45.092 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:45.092 * Background saving started by pid 24358
+24358:C 05 Jun 15:33:45.093 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:45.195 # Background saving error
+23212:M 05 Jun 15:33:51.049 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:51.049 * Background saving started by pid 24364
+24364:C 05 Jun 15:33:51.050 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:51.151 # Background saving error
+23212:M 05 Jun 15:33:57.012 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:33:57.013 * Background saving started by pid 24369
+24369:C 05 Jun 15:33:57.013 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:33:57.115 # Background saving error
+23212:M 05 Jun 15:34:03.067 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:03.068 * Background saving started by pid 24375
+24375:C 05 Jun 15:34:03.068 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:03.171 # Background saving error
+23212:M 05 Jun 15:34:09.027 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:09.029 * Background saving started by pid 24379
+24379:C 05 Jun 15:34:09.029 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:09.130 # Background saving error
+23212:M 05 Jun 15:34:15.085 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:15.086 * Background saving started by pid 24388
+24388:C 05 Jun 15:34:15.086 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:15.188 # Background saving error
+23212:M 05 Jun 15:34:21.038 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:21.039 * Background saving started by pid 24394
+24394:C 05 Jun 15:34:21.039 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:21.141 # Background saving error
+23212:M 05 Jun 15:34:27.100 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:27.101 * Background saving started by pid 24398
+24398:C 05 Jun 15:34:27.101 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:27.204 # Background saving error
+23212:M 05 Jun 15:34:33.065 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:33.066 * Background saving started by pid 24404
+24404:C 05 Jun 15:34:33.066 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:33.169 # Background saving error
+23212:M 05 Jun 15:34:39.022 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:39.024 * Background saving started by pid 24408
+24408:C 05 Jun 15:34:39.024 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:39.125 # Background saving error
+23212:M 05 Jun 15:34:45.078 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:45.079 * Background saving started by pid 24414
+24414:C 05 Jun 15:34:45.079 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:45.181 # Background saving error
+23212:M 05 Jun 15:34:51.038 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:51.038 * Background saving started by pid 24423
+24423:C 05 Jun 15:34:51.038 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:51.141 # Background saving error
+23212:M 05 Jun 15:34:57.101 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:34:57.101 * Background saving started by pid 24427
+24427:C 05 Jun 15:34:57.102 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:34:57.203 # Background saving error
+23212:M 05 Jun 15:35:03.064 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:03.064 * Background saving started by pid 24433
+24433:C 05 Jun 15:35:03.065 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:03.167 # Background saving error
+23212:M 05 Jun 15:35:09.029 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:09.031 * Background saving started by pid 24437
+24437:C 05 Jun 15:35:09.031 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:09.133 # Background saving error
+23212:M 05 Jun 15:35:15.094 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:15.095 * Background saving started by pid 24443
+24443:C 05 Jun 15:35:15.096 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:15.198 # Background saving error
+23212:M 05 Jun 15:35:21.059 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:21.059 * Background saving started by pid 24452
+24452:C 05 Jun 15:35:21.059 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:21.162 # Background saving error
+23212:M 05 Jun 15:35:27.016 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:27.016 * Background saving started by pid 24456
+24456:C 05 Jun 15:35:27.017 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:27.119 # Background saving error
+23212:M 05 Jun 15:35:33.075 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:33.075 * Background saving started by pid 24462
+24462:C 05 Jun 15:35:33.075 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:33.178 # Background saving error
+23212:M 05 Jun 15:35:39.030 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:39.032 * Background saving started by pid 24466
+24466:C 05 Jun 15:35:39.032 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:39.132 # Background saving error
+23212:M 05 Jun 15:35:45.089 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:45.090 * Background saving started by pid 24489
+24489:C 05 Jun 15:35:45.090 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:45.193 # Background saving error
+23212:M 05 Jun 15:35:51.048 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:51.049 * Background saving started by pid 24650
+24650:C 05 Jun 15:35:51.049 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:51.151 # Background saving error
+23212:M 05 Jun 15:35:57.015 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:35:57.015 * Background saving started by pid 24654
+24654:C 05 Jun 15:35:57.016 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:35:57.118 # Background saving error
+23212:M 05 Jun 15:36:03.079 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:03.080 * Background saving started by pid 24802
+24802:C 05 Jun 15:36:03.080 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:03.183 # Background saving error
+23212:M 05 Jun 15:36:09.045 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:09.047 * Background saving started by pid 24954
+24954:C 05 Jun 15:36:09.047 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:09.148 # Background saving error
+23212:M 05 Jun 15:36:15.010 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:15.010 * Background saving started by pid 24962
+24962:C 05 Jun 15:36:15.011 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:15.113 # Background saving error
+23212:M 05 Jun 15:36:21.069 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:21.069 * Background saving started by pid 24968
+24968:C 05 Jun 15:36:21.070 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:21.171 # Background saving error
+24973:M 05 Jun 15:36:21.469 * Increased maximum number of open files to 10032 (it was originally set to 256).
+24973:M 05 Jun 15:36:21.471 # Creating Server TCP listening socket *:6300: bind: Address already in use
+23212:M 05 Jun 15:36:27.032 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:27.032 * Background saving started by pid 24994
+24994:C 05 Jun 15:36:27.033 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:27.135 # Background saving error
+23212:M 05 Jun 15:36:33.100 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:33.101 * Background saving started by pid 25000
+25000:C 05 Jun 15:36:33.101 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:33.203 # Background saving error
+23212:M 05 Jun 15:36:39.063 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:39.065 * Background saving started by pid 25004
+25004:C 05 Jun 15:36:39.066 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:39.167 # Background saving error
+23212:M 05 Jun 15:36:45.029 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:45.030 * Background saving started by pid 25010
+25010:C 05 Jun 15:36:45.030 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:45.132 # Background saving error
+23212:M 05 Jun 15:36:51.089 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:51.089 * Background saving started by pid 25016
+25016:C 05 Jun 15:36:51.090 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:51.191 # Background saving error
+23212:M 05 Jun 15:36:57.047 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:36:57.048 * Background saving started by pid 25023
+25023:C 05 Jun 15:36:57.048 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:36:57.150 # Background saving error
+23212:M 05 Jun 15:37:03.001 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:03.002 * Background saving started by pid 25029
+25029:C 05 Jun 15:37:03.002 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:03.103 # Background saving error
+23212:M 05 Jun 15:37:09.062 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:09.064 * Background saving started by pid 25033
+25033:C 05 Jun 15:37:09.064 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:09.166 # Background saving error
+23212:M 05 Jun 15:37:15.026 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:15.027 * Background saving started by pid 25039
+25039:C 05 Jun 15:37:15.027 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:15.128 # Background saving error
+23212:M 05 Jun 15:37:21.085 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:21.086 * Background saving started by pid 25045
+25045:C 05 Jun 15:37:21.086 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:21.188 # Background saving error
+23212:M 05 Jun 15:37:27.045 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:27.046 * Background saving started by pid 25052
+25052:C 05 Jun 15:37:27.046 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:27.148 # Background saving error
+23212:M 05 Jun 15:37:33.003 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:33.004 * Background saving started by pid 25058
+25058:C 05 Jun 15:37:33.004 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:33.106 # Background saving error
+23212:M 05 Jun 15:37:39.063 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:39.064 * Background saving started by pid 25062
+25062:C 05 Jun 15:37:39.065 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:39.165 # Background saving error
+23212:M 05 Jun 15:37:45.025 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:45.025 * Background saving started by pid 25068
+25068:C 05 Jun 15:37:45.026 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:45.128 # Background saving error
+23212:M 05 Jun 15:37:51.085 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:51.085 * Background saving started by pid 25074
+25074:C 05 Jun 15:37:51.085 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:51.188 # Background saving error
+23212:M 05 Jun 15:37:57.040 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:37:57.041 * Background saving started by pid 25078
+25078:C 05 Jun 15:37:57.041 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:37:57.143 # Background saving error
+23212:M 05 Jun 15:38:03.099 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:03.100 * Background saving started by pid 25087
+25087:C 05 Jun 15:38:03.100 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:03.203 # Background saving error
+23212:M 05 Jun 15:38:09.057 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:09.059 * Background saving started by pid 25091
+25091:C 05 Jun 15:38:09.060 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:09.161 # Background saving error
+23212:M 05 Jun 15:38:15.017 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:15.018 * Background saving started by pid 25097
+25097:C 05 Jun 15:38:15.018 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:15.120 # Background saving error
+23212:M 05 Jun 15:38:21.079 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:21.080 * Background saving started by pid 25101
+25101:C 05 Jun 15:38:21.080 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:21.182 # Background saving error
+23212:M 05 Jun 15:38:27.035 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:27.036 * Background saving started by pid 25107
+25107:C 05 Jun 15:38:27.036 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:27.138 # Background saving error
+23212:M 05 Jun 15:38:33.099 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:33.099 * Background saving started by pid 25116
+25116:C 05 Jun 15:38:33.100 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:33.201 # Background saving error
+23212:M 05 Jun 15:38:39.066 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:39.068 * Background saving started by pid 25121
+25121:C 05 Jun 15:38:39.068 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:39.169 # Background saving error
+23212:M 05 Jun 15:38:45.030 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:45.031 * Background saving started by pid 25128
+25128:C 05 Jun 15:38:45.031 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:45.134 # Background saving error
+23212:M 05 Jun 15:38:51.093 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:51.094 * Background saving started by pid 25132
+25132:C 05 Jun 15:38:51.094 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:51.196 # Background saving error
+23212:M 05 Jun 15:38:57.060 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:38:57.061 * Background saving started by pid 25138
+25138:C 05 Jun 15:38:57.061 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:38:57.164 # Background saving error
+23212:M 05 Jun 15:39:03.013 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:03.014 * Background saving started by pid 25147
+25147:C 05 Jun 15:39:03.014 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:03.116 # Background saving error
+23212:M 05 Jun 15:39:09.069 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:09.071 * Background saving started by pid 25151
+25151:C 05 Jun 15:39:09.071 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:09.172 # Background saving error
+23212:M 05 Jun 15:39:15.036 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:15.036 * Background saving started by pid 25157
+25157:C 05 Jun 15:39:15.036 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:15.139 # Background saving error
+23212:M 05 Jun 15:39:21.095 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:21.096 * Background saving started by pid 25161
+25161:C 05 Jun 15:39:21.096 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:21.198 # Background saving error
+23212:M 05 Jun 15:39:27.054 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:27.055 * Background saving started by pid 25184
+25184:C 05 Jun 15:39:27.055 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:27.157 # Background saving error
+23212:M 05 Jun 15:39:33.018 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:33.019 * Background saving started by pid 25192
+25192:C 05 Jun 15:39:33.019 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:33.121 # Background saving error
+23212:M 05 Jun 15:39:39.086 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:39.088 * Background saving started by pid 25200
+25200:C 05 Jun 15:39:39.088 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:39.189 # Background saving error
+23212:M 05 Jun 15:39:45.050 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:45.051 * Background saving started by pid 25206
+25206:C 05 Jun 15:39:45.051 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:45.154 # Background saving error
+23212:M 05 Jun 15:39:51.016 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:51.016 * Background saving started by pid 25210
+25210:C 05 Jun 15:39:51.017 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:51.119 # Background saving error
+23212:M 05 Jun 15:39:57.080 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:39:57.081 * Background saving started by pid 25216
+25216:C 05 Jun 15:39:57.081 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:39:57.183 # Background saving error
+23212:M 05 Jun 15:40:03.042 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:03.042 * Background saving started by pid 25239
+25239:C 05 Jun 15:40:03.043 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:03.145 # Background saving error
+23212:M 05 Jun 15:40:09.097 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:09.097 * Background saving started by pid 25246
+25246:C 05 Jun 15:40:09.097 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:09.199 # Background saving error
+23212:M 05 Jun 15:40:15.054 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:15.054 * Background saving started by pid 25252
+25252:C 05 Jun 15:40:15.055 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:15.157 # Background saving error
+23212:M 05 Jun 15:40:21.010 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:21.010 * Background saving started by pid 25256
+25256:C 05 Jun 15:40:21.011 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:21.113 # Background saving error
+23212:M 05 Jun 15:40:27.075 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:27.076 * Background saving started by pid 25262
+25262:C 05 Jun 15:40:27.076 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:27.178 # Background saving error
+23212:M 05 Jun 15:40:33.032 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:33.033 * Background saving started by pid 25268
+25268:C 05 Jun 15:40:33.033 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:33.136 # Background saving error
+23212:M 05 Jun 15:40:39.096 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:39.098 * Background saving started by pid 25275
+25275:C 05 Jun 15:40:39.098 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:39.199 # Background saving error
+23212:M 05 Jun 15:40:45.055 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:45.056 * Background saving started by pid 25299
+25299:C 05 Jun 15:40:45.056 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:45.159 # Background saving error
+23212:M 05 Jun 15:40:51.024 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:51.024 * Background saving started by pid 25303
+25303:C 05 Jun 15:40:51.025 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:51.126 # Background saving error
+23212:M 05 Jun 15:40:57.086 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:40:57.086 * Background saving started by pid 25325
+25325:C 05 Jun 15:40:57.087 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:40:57.189 # Background saving error
+23212:M 05 Jun 15:41:03.049 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:41:03.049 * Background saving started by pid 25331
+25331:C 05 Jun 15:41:03.050 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:03.151 # Background saving error
+23212:M 05 Jun 15:41:09.014 * 10 changes in 300 seconds. Saving...
+23212:M 05 Jun 15:41:09.016 * Background saving started by pid 25335
+25335:C 05 Jun 15:41:09.017 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:09.118 # Background saving error
+23212:M 05 Jun 15:41:15.073 * 1 changes in 900 seconds. Saving...
+23212:M 05 Jun 15:41:15.074 * Background saving started by pid 25344
+25344:C 05 Jun 15:41:15.074 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:15.176 # Background saving error
+23212:M 05 Jun 15:41:21.031 * 1 changes in 900 seconds. Saving...
+23212:M 05 Jun 15:41:21.031 * Background saving started by pid 25348
+25348:C 05 Jun 15:41:21.032 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:21.133 # Background saving error
+23212:M 05 Jun 15:41:27.084 * 1 changes in 900 seconds. Saving...
+23212:M 05 Jun 15:41:27.085 * Background saving started by pid 25354
+25354:C 05 Jun 15:41:27.085 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:27.188 # Background saving error
+23212:M 05 Jun 15:41:33.042 * 1 changes in 900 seconds. Saving...
+23212:M 05 Jun 15:41:33.043 * Background saving started by pid 25360
+25360:C 05 Jun 15:41:33.043 # Failed opening the RDB file dump.rdb (in server root dir /private/var/lib/redis) for saving: Permission denied
+23212:M 05 Jun 15:41:33.146 # Background saving error
