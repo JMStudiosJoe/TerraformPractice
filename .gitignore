@@ -1,6 +1,6 @@
-*.tfstate
 *.tfstate.backup
 venv/
 .*.swp
 *.pyc
 redis/log/
+redis/var
