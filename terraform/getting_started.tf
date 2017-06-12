@@ -20,7 +20,7 @@ resource "aws_instance" "CeleryServer" {
 resource "aws_instance" "BackendServer" {
   ami           = "ami-d732f0b7"
   instance_type = "t2.micro"
-  KEy_name      = "${aws_key_pair.auth.id}"
+  key_name      = "${aws_key_pair.auth.id}"
   provisioner "remote-exec" {
     inline = [
       "sudo apt-get -y update",

@@ -1,6 +1,6 @@
 variable "key_name" {
   description = "key for aws machines to connect to"
-  default = "joseph"
+  default = "jrichardson@jmstudios.net"
 }
 variable "public_key_path" {
   description = "path to joseph.pub"
