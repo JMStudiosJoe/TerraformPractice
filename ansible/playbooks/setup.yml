@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: get git
+      shell: apt-get update &&  apt-get install git -y
