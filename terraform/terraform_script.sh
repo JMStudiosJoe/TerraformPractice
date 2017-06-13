@@ -13,7 +13,7 @@ do
     echo $backend_server_header >> ../ansible/hosts
 done
 terraform show | grep public_dns;cat ../ansible/hosts
-#ansible-playbook -i ../ansible/hosts ../ansible/playbooks/site.yml --private-key=~/.ssh/latest_joseph_key --sudo
+ansible-playbook -i ../ansible/hosts ../ansible/playbooks/site.yml --private-key=~/.ssh/latest_joseph_key --ssh-common-args='-o ForwardAgent=yes'
 #url="$aws_url`terraform show | grep public_dns | awk '{print $3}'`"
 #echo $url > ../ansible/hosts
 #ssh -i ~/.ssh/latest_joseph_key ubuntu@ec2-52-38-206-242.us-west-2.compute.amazonaws.com

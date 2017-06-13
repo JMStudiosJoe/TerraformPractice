@@ -57,3 +57,50 @@ resource "aws_security_group" "default" {
   }
 }
 
+
+
+resource "aws_instance" "load" {
+  tags {
+    Name = "switch"
+  }
+
+  connection {
+    user = "ubuntu"
+  }
+  # instance_type = "t2.micro"
+  instance_type = "${var.load_instance_type}"
+  ami = "ami-d732f0b7"
+  key_name = "${aws_key_pair.auth.id}"
+  vpc_security_group_ids = ["${aws_security_group.load.id}"]
+  subnet_id = "${aws_subnet.default.id}"
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get -y update",
+      "sudo apt-get -y install python-minimal",
+    ]
+  }
+
+}
+
+resource "aws_instance" "ansible-ctrl" {
+  tags {
+    Name = "ansible-ctrl"
+  }
+
+  connection {
+    user = "ubuntu"
+  }
+  instance_type = "t2.small"
+  ami = "ami-d732f0b7"
+  key_name = "${aws_key_pair.auth.id}"
+  vpc_security_group_ids = ["${aws_security_group.ansible-control.id}"]
+  subnet_id = "${aws_subnet.default.id}"
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get -y update",
+      "sudo apt-get -y install ansible",
+    ]
+  }
+}
