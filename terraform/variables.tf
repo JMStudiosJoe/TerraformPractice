@@ -7,9 +7,6 @@ variable "public_key_path" {
   default = "~/.ssh/latest_joseph_key.pub"
 } 
 
-variable "backend_repo_url" {
-  default = "get::https://github.com/Distribute-Inc/backend_api"
-}
 variable "aws_region" {
   description = "AWS region to launch servers."
   default     = "us-east-1"

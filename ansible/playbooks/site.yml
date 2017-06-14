@@ -1,9 +1,11 @@
+---
+
 - hosts: all
   tasks:
     - name: clone backend
       git:
-        repo: git@github.com:Distribute-Inc/backend_api.git
-        dest: ~/backend_api
+        repo: git@github.com:JMStudiosJoe/ReactPractice.git
+        dest: ~/jmstudios
         accept_hostkey: true
-        version: development
+        version: JMStudiosReact
         update: no

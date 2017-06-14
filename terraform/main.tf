@@ -5,32 +5,9 @@ resource "aws_key_pair" "auth" {
   key_name   = "${var.key_name}"
   public_key = "${file(var.public_key_path)}"
 }
-
-resource "aws_instance" "CeleryServer" {
-  ami           = "ami-d732f0b7"
-  instance_type = "t2.micro"
-  key_name      = "${aws_key_pair.auth.id}"	
-  provisioner "remote-exec" {
-    inline = [
-      "sudo apt-get -y update",
-      "sudo apt-get -y install python-minimal",
-    ]
-  }
-}
-resource "aws_instance" "BackendServer" {
-  ami           = "ami-d732f0b7"
-  instance_type = "t2.micro"
-  key_name      = "${aws_key_pair.auth.id}"
-  provisioner "remote-exec" {
-    inline = [
-      "sudo apt-get -y update",
-      "sudo apt-get -y install python-minimal",
-    ]
-  }
-}
 resource "aws_security_group" "default" {
-  name        = "terraform_example"
-  description = "Used in the terraform"
+  name        = "jmstudios_security_group"
+  description = "Used in website somehow"
 
   # SSH access from anywhere
   ingress {
@@ -57,50 +34,16 @@ resource "aws_security_group" "default" {
   }
 }
 
-
-
-resource "aws_instance" "load" {
-  tags {
-    Name = "switch"
-  }
-
-  connection {
-    user = "ubuntu"
-  }
-  # instance_type = "t2.micro"
-  instance_type = "${var.load_instance_type}"
-  ami = "ami-d732f0b7"
-  key_name = "${aws_key_pair.auth.id}"
-  vpc_security_group_ids = ["${aws_security_group.load.id}"]
-  subnet_id = "${aws_subnet.default.id}"
-
+resource "aws_instance" "JMStudiosServer" {
+  ami           = "ami-d732f0b7"
+  instance_type = "t2.micro"
+  #vpc_security_group_ids = ["${aws_security_group.default.id}"]
+  key_name      = "${aws_key_pair.auth.id}"
   provisioner "remote-exec" {
     inline = [
       "sudo apt-get -y update",
       "sudo apt-get -y install python-minimal",
-    ]
-  }
-
-}
-
-resource "aws_instance" "ansible-ctrl" {
-  tags {
-    Name = "ansible-ctrl"
-  }
-
-  connection {
-    user = "ubuntu"
-  }
-  instance_type = "t2.small"
-  ami = "ami-d732f0b7"
-  key_name = "${aws_key_pair.auth.id}"
-  vpc_security_group_ids = ["${aws_security_group.ansible-control.id}"]
-  subnet_id = "${aws_subnet.default.id}"
-
-  provisioner "remote-exec" {
-    inline = [
-      "sudo apt-get -y update",
-      "sudo apt-get -y install ansible",
+      #"sudo apt-get -y install git"
     ]
   }
 }
