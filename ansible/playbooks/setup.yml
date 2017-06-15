@@ -1,6 +1,10 @@
 - hosts: all
   tasks:
     - name: get git guud
-      shell: apt-get update -y && apt-get install git -y 
+      shell: apt-get update -y && apt-get install git -y && apt-get install build-essential libssl-dev -y 
     - name: get nvm
-      shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+      shell: wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash 
+    - name: source stuff
+      shell: source ~/.profile && nvm install 7.0.0 && nvm use 7.0.0
+      args:
+          executable: /bin/bash
