@@ -5,3 +5,4 @@ venv/
 *.pyc
 redis/log/
 redis/var
+*.retry

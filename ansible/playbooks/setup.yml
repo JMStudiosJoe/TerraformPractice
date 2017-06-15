@@ -2,9 +2,9 @@
   tasks:
     - name: get git guud
       shell: apt-get update -y && apt-get install git -y && apt-get install build-essential libssl-dev -y 
-    - name: get nvm
-      shell: wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash 
-    - name: source stuff
-      shell: source ~/.profile && nvm install 7.0.0 && nvm use 7.0.0
-      args:
-          executable: /bin/bash
+      #- name: get nvm
+      #shell: wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash 
+    - name: install node betterly
+      shell: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    - name: apt get install for node
+      shell: apt-get install node -y && apt-get install -y nodejs

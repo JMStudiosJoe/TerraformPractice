@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  tasks:
+    - name: move to project and install dependencies
+      shell: cd jmstudios/ && npm install --save
+    - name: run build
+      shell: cd jmstudios/ && npm run build
+    - name: run project 
+      shell: cd jmstudios/ && node server.js
+      #- name: webpack stuff
+      #shell: npm run build
+      # - name: run the project
+      #shell: node server.js 
