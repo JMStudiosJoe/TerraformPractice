@@ -8,6 +8,8 @@
       shell: cd jmstudios/ && npm run build
     - name: run project 
       shell: cd jmstudios/ && node server.js
+      async: 45
+      poll: 0
       #- name: webpack stuff
       #shell: npm run build
       # - name: run the project
