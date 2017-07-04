@@ -1,2 +1,0 @@
-pika==0.10.0
-SQLAlchemy==1.1.10

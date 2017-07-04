@@ -11,7 +11,11 @@ variable "aws_region" {
   description = "AWS region to launch servers."
   default     = "us-east-1"
 }
-
+variable "instance_id" {
+}
+variable "public_ip" {
+  default = "35.160.37.50"
+}
 
 variable "aws_amis" {
   default = {

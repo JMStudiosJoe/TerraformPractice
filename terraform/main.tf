@@ -1,6 +1,14 @@
 provider "aws" {
   region     = "us-west-2"
 }
+data "aws_eip" "proxy_ip" {
+  public_ip = "${var.public_ip}"
+}
+resource "aws_eip_association" "proxy_eip" {
+  instance_id   = "${var.instance_id}"
+  allocation_id = "${data.aws_eip.proxy_ip.id}"
+}
+
 resource "aws_key_pair" "auth" {
   key_name   = "${var.key_name}"
   public_key = "${file(var.public_key_path)}"
@@ -57,7 +65,6 @@ resource "aws_instance" "JMStudiosServer" {
     inline = [
       "sudo apt-get -y update",
       "sudo apt-get -y install python-minimal",
-      #"sudo apt-get -y install git"
     ]
   }
 }

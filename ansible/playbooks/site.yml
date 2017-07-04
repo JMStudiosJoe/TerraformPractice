@@ -8,4 +8,4 @@
         dest: ~/jmstudios
         accept_hostkey: true
         version: JMStudiosReact
-        update: no
+        update: yes
