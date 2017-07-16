@@ -4,12 +4,21 @@
   tasks:
     - name: move to project and install dependencies
       shell: cd jmstudios/ && npm install --save
+    
     - name: run build
       shell: cd jmstudios/ && npm run build
-    - name: run project 
-      shell: cd jmstudios/ && node server.js
-      async: 45
-      poll: 0
+
+    - name: "Install forever (to run Node.js app)."
+      npm: name=forever global=yes state=present
+
+    - name: "Start example Node.js app."
+      command: forever start jmstudios/server.js
+      #when: "forever_list.stdout.find('jmstudios/server.js') == -1"
+
+      #- name: run project 
+      #shell: node jmstudios/server.js
+      #async: 45
+      #poll: 0
       #- name: webpack stuff
       #shell: npm run build
       # - name: run the project

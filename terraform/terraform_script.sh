@@ -18,4 +18,4 @@ ansible-playbook -i ../ansible/hosts ../ansible/playbooks/setup.yml --private-ke
 #before can call git need to add ssh key to identity when passing ssh agent add the private key to agent by ssh-add ~/.ssh/key_to_add
 ssh-add ~/.ssh/latest_joseph_key
 ansible-playbook -i ../ansible/hosts ../ansible/playbooks/site.yml --private-key=~/.ssh/latest_joseph_key --ssh-common-args='-o ForwardAgent=yes'
-ansible-playbook -i ../ansible/hosts ../ansible/playbooks/project_setup.yml --private-key=~/.ssh/latest_joseph_key --ssh-common-args='-o ForwardAgent=yes'
+ansible-playbook -i ../ansible/hosts ../ansible/playbooks/project_setup.yml --private-key=~/.ssh/latest_joseph_key --ssh-common-args='-o ForwardAgent=yes' --sudo

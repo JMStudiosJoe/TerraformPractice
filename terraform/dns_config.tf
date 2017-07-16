@@ -1,5 +1,5 @@
 #data "aws_route53_zone" "distribute" {
-#  name = "distribute.com"
+#  name = "jmstudios.net"
 #}
 
 #data "aws_route53_zone" "distribute-int" {
