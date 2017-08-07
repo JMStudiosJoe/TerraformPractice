@@ -4,7 +4,7 @@ variable "key_name" {
 }
 variable "public_key_path" {
   description = "path to joseph.pub"
-  default = "~/.ssh/latest_joseph_key.pub"
+  default = "~/.ssh/latest_jrich_key.pub"
 } 
 
 variable "aws_region" {

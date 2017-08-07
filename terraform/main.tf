@@ -57,7 +57,6 @@ resource "aws_instance" "JMStudiosServer" {
     inline = [
       "sudo apt-get -y update",
       "sudo apt-get -y install python-minimal",
-      #"sudo apt-get -y install git"
     ]
   }
 }

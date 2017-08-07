@@ -2,10 +2,11 @@
 
 - hosts: all
   tasks:
+    - name: clean dir
+      shell: rm -rf jmstudios
+    - name: make jmstudios dir
+      shell: mkdir jmstudios
     - name: clone backend
       git:
-        repo: git@github.com:JMStudiosJoe/ReactPractice.git
+        repo: 'https://github.com/JMStudiosJoe/ReactPractice'
         dest: ~/jmstudios
-        accept_hostkey: true
-        version: JMStudiosReact
-        update: no
