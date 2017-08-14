@@ -28,9 +28,9 @@ variable "bluegreen_names" {
   }
 }
 variable "load_instance_type" {
-  default = "t2.large"
+  default = "t2.micro"
 }
 
 variable "bg_instance_type" {
-  default = "t2.large"
+  default = "t2.micro"
 }
