@@ -14,7 +14,7 @@ do
 done
 terraform show | grep public_dns;cat ../ansible/hosts
 
-ansible-playbook -i ../ansible/hosts ../ansible/playbooks/setup.yml --private-key=~/.ssh/latest_jrich_key --ssh-common-args='-o ForwardAgent=yes' --become=true
+ansible-playbook -i ../ansible/hosts ../ansible/playbooks/setup.yml --private-key=~/.ssh/latest_jrich_key --ssh-common-args='-o ForwardAgent=yes' --become
 #before can call git need to add ssh key to identity when passing ssh agent add the private key to agent by ssh-add ~/.ssh/key_to_add
 ssh-add ~/.ssh/latest_jrich_key
 ansible-playbook -i ../ansible/hosts ../ansible/playbooks/site.yml --private-key=~/.ssh/latest_jrich_key --ssh-common-args='-o ForwardAgent=yes'
