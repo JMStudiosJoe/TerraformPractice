@@ -8,3 +8,5 @@
       shell: sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
     - name: apt get install for node
       shell: apt-get install node -y && apt-get install -y nodejs
+    - name: install nginx
+      shell: apt-get install Nginx

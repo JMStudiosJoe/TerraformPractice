@@ -1,0 +1,13 @@
+
+---
+
+- hosts: all
+  tasks:
+    - name: move nginx to right location
+      shell: jmstudios/nginx/handle_nginx.sh
+    - name: run nginx test 
+      shell: nginx -t
+    - name: start nginx
+      shell: service nginx start
+      async: 15770000
+      poll: 0

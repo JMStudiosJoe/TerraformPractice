@@ -1,0 +1,13 @@
+
+---
+
+- hosts: all
+  tasks:
+    - name: move to project and install dependencies
+      shell: cd jmstudios/backend && pip3 install -r requirements.txt
+    - name: run build
+      shell: cd jmstudios/backend && export FLASK_APP=jmstudios_backend
+    - name: run project 
+      shell: cd jmstudios/backend && flask run -h localhost -p 5050
+      async: 15770000
+      poll: 0
