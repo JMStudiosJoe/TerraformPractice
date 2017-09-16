@@ -4,9 +4,11 @@
   tasks:
     - name: clean dir
       shell: rm -rf jmstudios
+      become: true
     - name: make jmstudios dir
       shell: mkdir jmstudios
     - name: clone backend
       git:
         repo: 'https://github.com/JMStudiosJoe/ReactPractice'
         dest: ~/jmstudios
+        version: 'JMStudiosBackend'

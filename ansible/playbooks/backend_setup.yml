@@ -3,11 +3,19 @@
 
 - hosts: all
   tasks:
-    - name: move to project and install dependencies
+    - name: create venv
+      shell: python3 -m venv /home/ubuntu/jmstudios/backend/venv
+    - name: create alias for python3
+      shell: alias python=python3
+    - name: move to backend and pip install dependencies
       shell: cd jmstudios/backend && pip3 install -r requirements.txt
-    - name: run build
-      shell: cd jmstudios/backend && export FLASK_APP=jmstudios_backend
-    - name: run project 
+      become: true
+    - name: create flask env for flask modules
+      shell: cd jmstudios/backend && pip3 install -e .
+      become: true
+    - name: export FLASK_APP
+      shell: echo 'export FLASK_APP=jmstudios_backend' >> ~/.bash_profile
+    - name: run flask backend 
       shell: cd jmstudios/backend && flask run -h localhost -p 5050
       async: 15770000
       poll: 0
