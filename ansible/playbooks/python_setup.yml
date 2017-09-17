@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
-    - name: install python3 setup tools
-      shell: apt-get install -y python3-setuptools
-    - name: fix libs
-      shell: apt-get install libffi-dev
-    - name: install python3 venv creator
-      shell: apt-get install -y python3.4-venv
-    - name: install pip3
-      shell: apt-get install -y python3-pip
+    - name: python setup libs
+      become: true
+      apt: name={{ item }} state=latest
+      with_items:
+        - python3-pip
+        - python3.4-venv
+        - libffi-dev
+        - python3-setuptools

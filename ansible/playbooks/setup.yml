@@ -1,12 +1,17 @@
 - hosts: all
   tasks:
-    - name: install git
-      shell: apt-get update -y && apt-get install git -y && apt-get install build-essential libssl-dev -y 
+    - name: install system setup for project
+      become: true
+      apt: name={{ item }} state=latest update_cache=true
+      with_items:
+        - git
+        - build-essential
+        - libssl-dev
+        - nodejs
+        - node
+        - nginx
+
     - name: install node
       shell: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     - name: setup redirect 
       shell: sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
-    - name: apt get install for node
-      shell: apt-get install node -y && apt-get install -y nodejs
-    - name: install nginx
-      shell: apt-get -y install nginx

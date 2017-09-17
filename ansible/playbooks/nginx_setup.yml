@@ -5,9 +5,12 @@
   tasks:
     - name: move nginx to right location
       shell: jmstudios/nginx/handle_nginx.sh
+      become: true
     - name: run nginx test 
       shell: nginx -t
+      become: true
     - name: start nginx
       shell: service nginx start
+      become: true
       async: 15770000
       poll: 0
