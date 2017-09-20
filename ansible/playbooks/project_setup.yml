@@ -1,4 +1,19 @@
 ---
+- hosts: all
+  vars:
+    machine_ip: "{{ machine_ip }}"
+  tasks:
+    - name: show me ip
+      debug: 
+        msg: "machine ip is {{machine_ip}}"
+    - name: create project config
+      shell: echo "const projectConfig = {" > jmstudios/project.config.ts
+    - name: add machine ip
+      shell: echo "'baseURL':" "'{{ machine_ip }}'" >> jmstudios/project.config.ts
+    - name: close projectConfig
+      shell: echo "}" >> jmstudios/project.config.ts
+    - name: export projectConfig
+      shell: echo "export default projectConfig" >> jmstudios/project.config.ts
 
 - hosts: all
   tasks:

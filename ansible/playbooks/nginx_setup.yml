@@ -2,9 +2,14 @@
 ---
 
 - hosts: all
+  vars:
+    machine_ip: "{{ machine_ip }}"
   tasks:
+    - name: show me ip
+      debug: 
+        msg: "machine ip is {{machine_ip}}"
     - name: move nginx to right location
-      shell: mv jmstudios/nginx/nginx.conf /etc/nginx/
+      shell: cp jmstudios/nginx/nginx.conf /etc/nginx/
       become: true
 
     - name: run nginx test 

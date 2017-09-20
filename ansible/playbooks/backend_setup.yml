@@ -18,13 +18,25 @@
 
 - hosts: all
   vars:
-    aws_url: '34.214.108.165'
+    machine_ip: "{{ machine_ip }}"
+    full_url: "{{ full_url }}"
   tasks:
+    - name: show me ip
+      debug: 
+        msg: "machine ip is {{ machine_ip }} full url is {{ full_url }}"
+
     - name: send setup_data
-      shell: scp -r -i ~/.ssh/latest_jrich_key ~/Documents/WebDevWorkspace/ReactPractice/ReactPractice/backend/jmstudios_backend/db_setup_scripts/setup_data 34.214.108.165:/jmstudios/backend/jmstudios_backend/db_setup_scripts/
+      synchronize:
+        src: ~/Documents/WebDevWorkspace/ReactPractice/ReactPractice/backend/jmstudios_backend/db_setup_scripts/setup_data
+        dest: "~/jmstudios/backend/jmstudios_backend/db_setup_scripts/"
 
     - name: send .aws credentials
-      shell: scp -r -i ~/.ssh/latest_jrich_key ~/.aws 34.214.108.165:~/ 
+      synchronize: 
+        src: ~/.aws
+        dest: ~/ 
+
+    - name: run python setup and initialize db
+      shell: python3 jmstudios/backend/jmstudios_backend/db_setup_scripts/db_setup.py
 
 
 
