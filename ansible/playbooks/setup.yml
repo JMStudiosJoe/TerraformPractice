@@ -10,8 +10,10 @@
         - nodejs
         - node
         - nginx
+        - uwsgi-core
 
     - name: install node
       shell: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-    - name: setup redirect 
-      shell: sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
+    - name: setup redirect
+      become: true
+      shell: iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
