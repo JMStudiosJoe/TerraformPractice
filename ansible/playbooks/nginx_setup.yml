@@ -8,8 +8,14 @@
     - name: show me ip
       debug: 
         msg: "machine ip is {{machine_ip}}"
+
+    - name: complete nginx file with ip address
+      shell: echo "proxy_pass http://{{ machine_ip }}:5050/api/;" >> jmstudios/nginx/prod_nginx.conf
+    - name: close nginx file
+      shell: echo "} } }" >> jmstudios/nginx/prod_nginx.conf
+
     - name: move nginx to right location
-      shell: cp jmstudios/nginx/nginx.conf /etc/nginx/
+      shell: mv jmstudios/nginx/prod_nginx.conf /etc/nginx/nginx.conf
       become: true
 
     - name: run nginx test 

@@ -37,6 +37,8 @@
 
     - name: run python setup and initialize db
       shell: python3 jmstudios/backend/jmstudios_backend/db_setup_scripts/db_setup.py
+      async: 300
+      poll: 0
 
 
 
@@ -50,8 +52,11 @@
     - name: export FLASK_APP
       shell: echo 'export FLASK_APP=jmstudios_backend' >> ~/.bash_profile
 
-    - name: run flask backend through uwsgi 
+    - name: cd to proper location?
+      shell: cd jmstudios/backend/jmstudios_backend
+
+    - name: run uwsgi with port and log
       become: true
-      shell: cd jmstudios/backend/jmstudios_backend && uwsgi --socket 0.0.0.0:5050 --protocol=http -w wsgi
+      shell:  uwsgi --socket 0.0.0.0:5050 --logto /tmp/uwsgi.log --protocol=http -w wsgi
       async: 15770000
       poll: 0
