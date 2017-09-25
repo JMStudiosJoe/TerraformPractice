@@ -17,11 +17,17 @@
 
 - hosts: all
   tasks:
-    - name: move to project and install dependencies
-      shell: cd jmstudios/ && npm install --save
+    - name: move to frontend project and install dependencies
+      command: npm install --save
+      args:
+        chdir: jmstudios/
     - name: run build
-      shell: cd jmstudios/ && npm run build
+      command: npm run build
+      args:
+        chdir: jmstudios/
     - name: run project 
-      shell: cd jmstudios/ && node server.js
+      command: node server.js
+      args:
+        chdir: jmstudios/
       async: 15770000
       poll: 0

@@ -4,13 +4,15 @@
 - hosts: all
   tasks:
     - name: create venv
-      shell: python3 -m venv /home/ubuntu/jmstudios/backend/venv
+      command: python3 -m venv /home/ubuntu/jmstudios/backend/venv
 
     - name: create alias for python3
-      shell: alias python=python3
+      command: alias python=python3
 
     - name: move to backend and pip install dependencies
-      shell: cd jmstudios/backend && pip3 install -r requirements.txt
+      command: pip3 install -r requirements.txt
+      args:
+        chdir: jmstudios/backend
       become: true
 
 
@@ -21,10 +23,6 @@
     machine_ip: "{{ machine_ip }}"
     full_url: "{{ full_url }}"
   tasks:
-    - name: show me ip
-      debug: 
-        msg: "machine ip is {{ machine_ip }} full url is {{ full_url }}"
-
     - name: send setup_data
       synchronize:
         src: ~/Documents/WebDevWorkspace/ReactPractice/ReactPractice/backend/db_setup_scripts/setup_data
@@ -36,7 +34,7 @@
         dest: ~/ 
 
     - name: run python setup and initialize db
-      shell: python3 db_setup_scripts/db_setup.py
+      command: python3 db_setup_scripts/db_setup.py
       async: 13000
       poll: 0
       args:
@@ -48,18 +46,19 @@
 - hosts: all
   tasks:
     - name: create flask env for flask modules
-      shell: cd jmstudios/backend && pip3 install -e .
+      command: pip3 install -e .
+      args:
+        chdir: jmstudios/backend
       become: true
 
     - name: export FLASK_APP
-      shell: echo 'export FLASK_APP=jmstudios_backend' >> ~/.bash_profile
+      command: echo 'export FLASK_APP=jmstudios_backend' >> ~/.bash_profile
 
     - name: cd to proper location?
       shell: cd jmstudios/backend/jmstudios_backend
 
     - name: run uwsgi with port and log
       become: true
-      become_user: root
-      shell:  uwsgi --http-socket 0.0.0.0:5050 --logto /tmp/uwsgi.log --wsgi-file jmstudios/backend/jmstudios_backend/wsgi.py &
+      comand:  uwsgi --http-socket 0.0.0.0:5050 --logto /tmp/uwsgi.log --wsgi-file jmstudios/backend/jmstudios_backend/wsgi.py &
       async: 15770000
       poll: 0
