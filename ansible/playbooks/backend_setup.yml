@@ -6,9 +6,6 @@
     - name: create venv
       command: python3 -m venv /home/ubuntu/jmstudios/backend/venv
 
-    - name: create alias for python3
-      command: alias python=python3
-
     - name: move to backend and pip install dependencies
       command: pip3 install -r requirements.txt
       args:
@@ -54,11 +51,8 @@
     - name: export FLASK_APP
       command: echo 'export FLASK_APP=jmstudios_backend' >> ~/.bash_profile
 
-    - name: cd to proper location?
-      shell: cd jmstudios/backend/jmstudios_backend
-
     - name: run uwsgi with port and log
       become: true
-      comand:  uwsgi --http-socket 0.0.0.0:5050 --logto /tmp/uwsgi.log --wsgi-file jmstudios/backend/jmstudios_backend/wsgi.py &
+      command:  uwsgi --http-socket 0.0.0.0:5050 --logto /tmp/uwsgi.log --wsgi-file jmstudios/backend/jmstudios_backend/wsgi.py &
       async: 15770000
       poll: 0
